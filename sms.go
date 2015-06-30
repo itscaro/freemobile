@@ -14,8 +14,6 @@ type Config struct {
 }
 
 func (config *Config) SendSms(message string) bool {
-	// TODO verify COnfig
-	
 	if config.Endpoint == "" {
 		panic("Endpoint is not declared")
 	}
